@@ -1,0 +1,96 @@
+// @mixin on-event($self: false) {
+//     @if $self {
+//       &,
+//       &:hover,
+//       &:active,
+//       &:focus {
+//         @content;
+//       }
+//     } @else {
+//       &:hover,
+//       &:active,
+//       &:focus {
+//         @content;
+//       }
+//     }
+// }
+
+// General
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin theme($light-theme: true) {
+    @if ($light-theme) {
+      background-color: lighten($primary-color, 100%);
+      color: darken($text-color, 100%);
+    }
+}
+
+// Media Mixins
+
+    // Mobile
+    @mixin media-sm {
+        @media screen and (min-width: $mobile) {
+            @content;
+        }
+    }
+    @mixin media-max-sm {
+        @media screen and (max-width: $mobile) {
+            @content;
+        }
+    }
+
+    // Tablet
+    @mixin media-md {
+        @media screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+    @mixin media-max-md {
+        @media screen and (max-width: $tablet) {
+            @content;
+        }
+    }
+
+    // Desktop
+    @mixin media-lg {
+        @media screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+    @mixin media-max-lg {
+        @media screen and (max-width: $desktop) {
+            @content;
+        }
+    }
+
+    // High Resolution Displays
+    @mixin media-xl {
+        @media screen and (min-width: $highRes) {
+            @content;
+        }
+    }
+    @mixin media-max-xl {
+        @media screen and (max-width: $highRes) {
+            @content;
+        }
+    }
+
+    // Midpoints
+    @mixin media-sm-md {
+        @media screen and (min-width: 594px) {
+            @content;
+        }
+    }
+    @mixin media-md-lg {
+        @media screen and (min-width: 896px) {
+            @content;
+        }
+    }
+    @mixin media-lg-xl {
+        @media screen and (min-width: 1312px) {
+            @content;
+        }
+    }

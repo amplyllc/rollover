@@ -1,0 +1,31 @@
+// Button 1
+.button-1 {
+    background: map.get($theme-colors, "secondary");
+    border: 3px solid map.get($theme-colors, "secondary");
+    border-radius: 50px;
+    color: map.get($theme-colors, "accent");
+}
+
+.button-1:hover {
+    background: none;
+    border: 3px solid map.get($theme-colors, "secondary");
+    border-radius: 50px;
+    color: map.get($theme-colors, "secondary");
+
+    @include transition-ease;
+}
+// Button 2
+.button-2 {
+    background: none;
+    border: 3px solid map.get($theme-colors, "secondary");
+    border-radius: 50px;
+    color: map.get($theme-colors, "secondary");
+}
+.button-2:hover {
+    background: map.get($theme-colors, "secondary");
+    border: 3px solid map.get($theme-colors, "secondary");
+    border-radius: 50px;
+    color: map.get($theme-colors, "accent");
+
+    @include transition-ease;
+}
