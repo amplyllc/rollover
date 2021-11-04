@@ -1,0 +1,12 @@
+#contactForm {
+  max-width: 500px;
+  
+  input,
+  textarea {
+    background: map.get($theme-colors, "background");
+    border: none;
+    border-radius: 25px;
+    resize: vertical;
+    padding: 1rem;
+  }
+}

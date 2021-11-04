@@ -1,20 +1,48 @@
-// Media Variables
-$mobile: 420px;
-$tablet: 768px;
-$desktop: 1024px;
-$highRes: 1600px;
+// ---------------------------------
+// map.get($variable, "value")
+// ---------------------------------
 
-// Font Vairables
-$heading-font: " ";
-$body-font: " ";
-$paragraph-font: " ";
-$secondary-font: " ";
-$custom-font: " ";
+// ===================
+// colors
+// ===================
+$theme-colors: (
+  'primary': #136F63, 
+  'secondary': #94C9A9,
+  'accent': #F17300,
+  'white': #ffff,
+  'black': #1D1E18,
+  'foreground': #191919,
+  'background': #f1f1f1,
+);
 
-// Z-Indexes
+// ===================
+// font
+// ===================
+$fonts: (
+  'heading': 'Damion-Regular',
+  'paragraph': 'JosefinSans-Regular',
+  'anchor': 'JosefinSans-Regular',
+  'secondary': '',
+);
+
+// ===================
+// media
+// ===================
+$media: (
+  'small': 420px,
+  'medium': 768px,
+  'large': 1024px,
+  'x-large': 1600px,
+);
+
+// ===================
+// z-indexes
+// ===================
 $z-indexes: (
   'modal': 5000,
   'dropdown': 4000,
   'default': 1,
   'below': -1,
 );
+
+

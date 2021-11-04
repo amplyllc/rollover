@@ -1,9 +1,17 @@
-// General Styles
+// ===================
+// general styles
+// ===================
 img {
     width: 100%;
 }
+.bgDiv {
+    background: url("../../img/background.jpg") no-repeat center;
+    background-size: cover;
+}
 
-// Classes
+// ===================
+// classes
+// ===================
 .grow:hover {
 transform: scale(1.03);
 }

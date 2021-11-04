@@ -1,25 +1,26 @@
 // ================================
-// Font Styles
+// font styles
 // ================================
 h1,
 h2,
 h3,
 h4 {
-    font-family: $heading-font;
+    font-family: map.get($fonts, "heading");
+}
+p {
+    font-family: map.get($fonts, "paragraph");
 }
 body {
-    font-family: $paragraph-font;
+    font-family: map.get($fonts, "anchor");
 }
-.body-font {
-    font-family: $secondary-font;
-}
+
 // ================================
-// Font Sizing
+// font sizing
 // ================================
 $font-size: 100%;
 $ratio: 1.333;
 
-// Calculate values
+// calculate values
 $h6: $font-size * $ratio;
 $h5: $h6 * $ratio;
 $h4: $h5 * $ratio;

@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title> - </title>
+    <title>Roll Over - Delicious Homemade Wraps and Sandwiches</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content=" ">
-    <meta name="keywords" content=" ">
-    <meta name="author" content=" LLC">
+    <meta name="description" content="Delicious Homemade Wraps and Sandwiches in Syracuse">
+    <meta name="keywords" content="Delicious Wraps Sandwiches Restaurant">
+    <meta name="author" content="ROLL OVER LLC">
     <!-- <meta name="twitter:image:src" content="https://website.com/img/ogimage.png"> -->
-    <meta property="og:title" content=" " />
-    <meta property="og:description" content=" " />
+    <meta property="og:title" content="Roll Over Restaurant" />
+    <meta property="og:description" content="Delicious Homemade Wraps and Sandwiches in Syracuse" />
     <!-- <meta property="og:image" content="https://website.com/img/ogimage.png"/> -->
     <!-- <meta property="og:url" content="https://website.com" /> -->
     <meta property="og:type" content="website"/>
@@ -18,32 +18,94 @@
     <link rel="stylesheet" href="css/main.min.css">
 
   </head>
-  <body class="bg-">
+  <body>
     
-    <!-- header -->
-    <header class=" ">
-      
+    <!-- bgDiv -->
+    <div class="bgDiv">
+  
+    <!-- *** header *** -->
+    <header class="px-2 py-1">
+      <a class="logo" href="index.html"><img style="width: 40px;" src="svg/logo.svg" alt="logo"></a>
+      <div class="empty"></div>
+      <input class="menuBtn" type="checkbox" id="menuBtn"/>
+      <label class="menuIcon md-hide" for="menuBtn"><span class="navIcon"></span></label>
+      <ul class="menu">
+        <li class="me-2"><a href="events.html">Events</a></li>
+        <li class="me-2"><a href="about.html">About</a></li>
+        <li class="me-2"><a href="#contact">Contact</a></li>
+        <li class="me-2"><a href="#location">Directions</a></li>
+        <li class="me-2"><a href="jobs.html">Jobs</a></li>
+        <li><a href="menu.html">Menu</a></li>
+      </ul>
     </header><!-- /header -->
+   
+    <!-- *** landing *** -->
+    <section id="landing" class="text-white text-center py-5">
+      <div class="py-5">
+        <p class="mt-5">Welcome To</p>
+        <h1 class="py-1">Roll Over</h1>
+        <p class="pb-1">Try our delicious wraps and sandwiches today.</p>
+        <div class="d-flex default py-1 mb-5">
+          <a class="button-2 default me-1" href="#">Call Now</a>
+          <a class="button-1 default" href="menu.html">View Menu</a>
+        </div>
+      </div>
+    </section><!-- /landing -->
+    </div><!-- /bgDiv -->
 
-    <!--  -->
-    <section id=" " class=" ">
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <p>Paragraph</p>
-    </section><!-- / -->
-    
-    <!--  -->
-    <section id=" " class=" ">
-      
-    </section><!-- / -->
+    <!-- *** about *** -->
+    <section id="about" class="d-flex flex-column default text-center py-5">
+      <h2>Our Story</h2>
+      <p class="px-2 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur culpa, asperiores dolorem placeat id, neque laborum nemo numquam quae corporis. Esse animi officia sint!</p>
+      <a class="button-1 px-2 py-05" href="about.html">About Us</a>
+    </section><!-- /about -->
 
-    <!-- footer -->
-    <footer class=" ">
-      
+    <!-- *** food *** -->
+    <section id="food" class="md-d-flex text-center py-5">
+      <div class="md-w-50 px-2 py-5">
+        <h2>Our Menu</h2>
+        <p class="px-2 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur culpa, asperiores dolorem placeat id, neque laborum nemo numquam quae corporis. Esse animi officia sint!</p>
+        <a class="button-1 px-2 py-05" href="about.html">View Menu</a>
+      </div>
+      <div class="md-w-50 px-2">
+        <img src="img/food.jpg" alt="menu food">
+      </div>
+    </section><!-- /food -->
+
+    <!-- *** contact *** -->
+    <section id="contact" class="d-flex flex-column default my-5 pb-5">
+      <h2 class="mb-3">Contact</h2>
+      <form id="contactForm" name="contactHome" class="w-90" action="/success/index.html">
+        <div class="d-flex px-1 py-05">
+          <input class="w-50 me-1" type="text" name="name" class="form-control" placeholder="Your name" aria-label="Full name" required>
+          <input class="w-50" type="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="d-flex px-1 py-05">
+          <input class="w-100 mt-1" type="subject" class="form-control" name="subject" placeholder="Subject of message" required>
+        </div>
+        <div class="d-flex px-1 py-05">
+          <textarea class="w-100 mt-1" name="message" rows="3" placeholder="Your message" required></textarea>
+        </div>
+        <div class="d-flex default px-1 mt-1">
+          <button class="button-2 full" type="submit">Send</button>
+        </div>
+      </form>
+    </section><!-- /contact -->
+
+    <!-- *** footer *** -->
+    <footer class="bg-secondary d-flex default text-white px-2 py-1">
+      <div id="location" class="d-flex flex-column j-c-c a-i-s me-auto">
+        <p>Address:</p>
+        <div class="py-05">
+          <small>123 Gotham Street Rd</small><br>
+          <small>Gotham, NY 00000</small>
+        </div>
+        <p>Phone:</p>
+        <small class="py-05">(000) 000-0000</small>
+        <p>Email:</p>
+        <small class="py-05">info@email.com</small>
+      </div>
+      <small>&copy; 2021 Smash Burger LLC</small>
     </footer><!-- /footer -->
 
   </body>
