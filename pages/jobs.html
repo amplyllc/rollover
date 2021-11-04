@@ -15,14 +15,14 @@
     <!-- <meta property="og:url" content="https://website.com" /> -->
     <meta property="og:type" content="website"/>
 
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="../css/main.min.css">
 
   </head>
   <body>
-
+    
     <!-- *** header *** -->
     <header class="bg-secondary px-2 py-1">
-      <a class="logo" href="index.html"><img style="width: 40px;" src="svg/logo.svg" alt="logo"></a>
+      <a class="logo" href="../index.html"><img style="width: 40px;" src="../svg/logo.svg" alt="logo"></a>
       <div class="empty"></div>
       <input class="menuBtn" type="checkbox" id="menuBtn"/>
       <label class="menuIcon md-hide" for="menuBtn"><span class="navIcon"></span></label>
@@ -36,50 +36,33 @@
       </ul>
     </header><!-- /header -->
 
-    <!-- *** events *** -->
-    <section id="events">
+    <!-- *** jobs *** -->
+    <section id="jobs" class="d-flex flex-column default text-center py-5">
+      <h2 class="px-1">Jobs</h2>
+      <p class="w-90 py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cupiditate aspernatur alias pariatur nihil quae.</p>
+      <a class="button-2 px-1 py-05" href="#">Apply Now</a>
+    </section><!-- /jobs -->
 
-      <div class="w-100 d-flex flex-column default text-center py-5">
-        <h1>Events</h1>
-        <p class="px-2 py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem neque similique culpa?</p>
-        <div class="d-flex default py-1 mb-5">
-      </div>
-
-      <div class="grid-1 px-2">
-
-        <div class="card-1">
-          <img src="img/food.jpg" alt="food image">
-          <div class="text">
-            <small>February 3rd, 2021 - March 21st, 2021</small>
-            <h3>Lorem ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur aliquid quisquam?</p>
-          </div>
+    <!-- *** contact *** -->
+    <section id="contact" class="d-flex flex-column default my-5 pb-5">
+      <h2 class="mb-3">Contact</h2>
+      <form id="contactForm" class="w-90" action="/success/index.html">
+        <div class="d-flex px-1 py-05">
+          <input class="w-50 me-1" type="text" name="name" class="form-control" placeholder="Your name" aria-label="Full name" required>
+          <input class="w-50" type="email" name="email" placeholder="Your email" required>
         </div>
-
-        <div class="card-1">
-          <img src="img/food.jpg" alt="food image">
-          <div class="text">
-            <small>February 3rd, 2021 - March 21st, 2021</small>
-            <h3>Lorem ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur aliquid quisquam?</p>
-          </div>
+        <div class="d-flex px-1 py-05">
+          <input class="w-100 mt-1" type="subject" class="form-control" name="subject" placeholder="Subject of message" required>
         </div>
-
-        <div class="card-1">
-          <div>
-            <img src="img/food.jpg" alt="food image">
-          </div>
-          <div class="text">
-            <small>February 3rd, 2021 - March 21st, 2021</small>
-            <h3>Lorem ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur aliquid quisquam?</p>
-          </div>        
+        <div class="d-flex px-1 py-05">
+          <textarea class="w-100 mt-1" name="message" rows="3" placeholder="Your message" required></textarea>
         </div>
-        
-      </div>
+        <div class="d-flex default px-1 mt-1">
+          <button class="button-2 full" type="submit">Send</button>
+        </div>
+      </form>
+    </section><!-- /contact -->
 
-    </section><!-- /events -->
-   
     <!-- *** footer *** -->
     <footer class="bg-secondary d-flex default text-white px-2 py-1">
       <div id="location" class="d-flex flex-column j-c-c a-i-s me-auto">

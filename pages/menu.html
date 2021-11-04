@@ -15,14 +15,14 @@
     <!-- <meta property="og:url" content="https://website.com" /> -->
     <meta property="og:type" content="website"/>
 
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="../css/main.min.css">
 
   </head>
   <body>
     
     <!-- *** header *** -->
     <header class="bg-secondary px-2 py-1">
-      <a class="logo" href="index.html"><img style="width: 40px;" src="svg/logo.svg" alt="logo"></a>
+      <a class="logo" href="../index.html"><img style="width: 40px;" src="../svg/logo.svg" alt="logo"></a>
       <div class="empty"></div>
       <input class="menuBtn" type="checkbox" id="menuBtn"/>
       <label class="menuIcon md-hide" for="menuBtn"><span class="navIcon"></span></label>
@@ -36,17 +36,65 @@
       </ul>
     </header><!-- /header -->
 
-    <!-- *** jobs *** -->
-    <section id="jobs" class="d-flex flex-column default text-center py-5">
-      <h2 class="px-1">Jobs</h2>
-      <p class="w-90 py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cupiditate aspernatur alias pariatur nihil quae.</p>
-      <a class="button-2 px-1 py-05" href="#">Apply Now</a>
-    </section><!-- /jobs -->
+    <!-- *** menu *** -->
+    <section id="menu" class="d-flex flex-column default py-5">
+      <h2 class="px-1">Menu</h2>
+      <div class="grid-1 p-2">
+        <!-- burgers -->
+        <div class="cell">
+          <h3 class="py-1">Sandwiches</h3>
+
+          <p class="my-1">It's Pastable - $4.99</p>
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quos est blanditiis.</small>
+
+          <p class="my-1">The Symphony - $5.99</p>
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi?</small>
+
+          <p class="my-1">The Gary Special - $2.99</p>
+          <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sint commodi ea obcaecati atque quod.</small>
+        </div><!-- /burgers -->
+
+        <!-- dogs -->
+        <div class="cell">
+          <h3 class="py-1">Wraps</h3>
+          
+          <p class="my-1">The All American - $1.99</p>
+          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quia doloribus sunt quaerat.</small>
+
+          <p class="my-1">Wrap God - $1.99</p>
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto inventore labore tempora, quidem officiis officia.</small>
+        </div><!-- /dogs -->
+
+        <!-- sides -->
+        <div class="w-50 d-flex flex-column a-i-s">
+          <h3 class="py-1">Sides</h3>
+
+          <p class="my-1">Fries - $1.99</p>
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsam velit veritatis eos.</small>
+
+          <p class="my-1">Tots - $1.99</p>
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe amet minima incidunt!</small>
+        </div><!-- /sides -->
+
+        <!-- drinks -->
+        <div class="cell">
+          <h3 class="py-1">Drinks </h3>
+
+          <p class="my-1">Green Smoothie - $3.99</p>
+          <small>Lorem ipsum dolor sit amet.</small>
+
+          <p class="my-1">Fountain Drinks - $0.99</p>
+          <small>Coke, Diet Coke, Dr. Pepper, Sprite, Fanta, Powerade</small>
+        </div><!-- /drinks -->
+
+
+      </div>
+    </section><!-- /menu -->
 
     <!-- *** contact *** -->
     <section id="contact" class="d-flex flex-column default my-5 pb-5">
       <h2 class="mb-3">Contact</h2>
-      <form id="contactForm" name="contactHome" class="w-90" action="/success/index.html">
+      <form id="contactForm" class="w-90" action="/success/index.html">
         <div class="d-flex px-1 py-05">
           <input class="w-50 me-1" type="text" name="name" class="form-control" placeholder="Your name" aria-label="Full name" required>
           <input class="w-50" type="email" name="email" placeholder="Your email" required>
